@@ -1,0 +1,280 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src:
+      url(../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf)
+  }
+
+  @font-face {
+    font-family: "Noto-Sans";
+    src:
+      url(../fonts/NotoSans-VariableFont_wdth\,wght.ttf)
+  }
+  
+body {
+    height: 100vh;
+    background-color: #ebebeb;
+    color: #4f5d51;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;    
+
+}
+
+a {
+    color: #4f5d51;
+    font-family: Noto-Sans;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    position: relative;
+
+}
+
+.banner {
+    position: relative;
+    left: 0;
+    top: 0;
+	width: 42%
+}
+
+.LSF {
+    position: absolute;
+    right: 36px;
+    top: 24px;
+    width: 193px;
+    height: 87px;
+}
+
+.container_dados {
+    width: 437px;
+    position: absolute;
+    top: 126px;
+    left: 363px;
+
+
+
+}
+
+.titulo {
+    font-family: Fraunces;
+    font-size: 25px;
+    font-weight: bold;
+	position: absolute;
+	top:	25%;
+	right: 36px;
+}
+
+.canal {
+    font-family: Fraunces;
+    color: #057d35;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contato {
+    color: #4f5d51;
+    font-family: Noto-Sans;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 2 / 2 / 3 / 6; }
+    .div4 { grid-area: 3 / 1 / 4 / 2; }
+    .div5 { grid-area: 3 / 2 / 4 / 6; }
+    .div6 { grid-area: 4 / 1 / 6 / 2; }
+    .div7 { grid-area: 4 / 2 / 6 / 6; }
+
+.rodape {
+    position: absolute;
+    top: 88%;
+    right: 36px;
+    left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rodape_texto {
+    font-family: Noto-Sans;
+    font-size: 10px;
+    line-height: 12px;
+}   
+
+.rodap_logo {
+
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.contatos {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: absolute;
+	top: 275px;
+	right: 36px;
+}
+
+.icone {
+	width: 50px;
+}
+
+@media (orientation: portrait) {
+	body {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start ;
+    align-items: normal;
+    align-content: stretch;    
+
+}
+	
+}
+
+
+
+/*@media (orientation: portrait) {*/
+@media screen and (max-width: 500px) {
+body {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start ;
+    align-items: normal;
+    align-content: stretch;    
+
+}	
+	
+	
+	
+.container {
+    width: 100vw;
+    position: relative;
+
+
+}	
+	
+	.contatos {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		justify-content: space-around;
+		gap: 20px;
+		margin-top: 20px;
+		
+	}
+	
+	.contato_box{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}	
+	
+	.rodape {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 20px;
+		padding: 0 20px;
+
+	}	
+}
+
+@media screen and (max-width: 780px) {
+	.rodape {
+		position: relative;
+		top: 0px;
+		right: 0;
+		left: 0;
+		padding: 0 36px;
+		margin-top: 20px;
+
+		
+	}
+	
+}
+
+
+@media screen and (max-width: 720px) {
+	.LSF {
+
+		
+	}
+	
+	.titulo {
+		top: inherit;
+		bottom: auto;
+		transform: translateY(-100px);
+		
+/*
+		right: inherit;
+		left: 40%;
+*/
+	}
+	
+	.contato_box{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}		
+	
+	.contatos {
+		position: relative;
+		top: 0px;
+		right: 0;
+		left: 0;
+		padding: 0 36px;
+		margin-top: 20px;		
+	}
+}
+
+
+@media screen and (max-width: 550px) {
+	.body {
+		width: 100vw;
+	}
+	
+	.titulo {
+		font-size: 4.5vw;
+		transform: translateY(-16vw);	
+		right: 10px;
+	}
+	
+}
