@@ -96,6 +96,8 @@ a {
 }
 
 
+
+
 .parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -277,4 +279,50 @@ body {
 		right: 10px;
 	}
 	
+}
+
+@media screen and (max-width: 400px) {
+	body {
+		width: auto;
+		margin: auto;
+	}
+	
+	.LSF {
+		width: 45vw ;
+		height: auto;
+		right: 5px;
+
+		
+	}	
+	
+	.contato_box {
+		padding: 5px;
+	}
+	
+	.contato{
+		font-size: 4vw;
+	}
+	
+	
+a {
+		font-size: 4vw;
+}	
+	
+	.canal{
+		font-size: 4vw;
+	}
+	
+
+	
+	.img_icone {
+		width: 80%;
+	}	
+	
+	
+	.rodape {
+				padding: 0 5px;
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+	}
 }
